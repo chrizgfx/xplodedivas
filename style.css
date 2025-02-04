@@ -1,5 +1,6 @@
 :root {
     --primary-color: #48fd63;
+    --secondary-color: #0b2c12;
     --background-color: #020c06;
     --text-color: #ffffff;
     --accent-gradient: linear-gradient(45deg, #48fd63, #00ff9d);
@@ -388,7 +389,7 @@ section > * {
 }
 
 .lightboxClose:hover {
-    background: var(--background-color);
+    background: var(--secondary-color);
     color: var(--primary-color);
 }
 
