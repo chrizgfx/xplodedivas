@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const galleryGrid = document.querySelector('.galleryGrid');
     const images = [
-        'assets/images/placeholder.jpg',
-        'assets/images/placeholderBanner.jpg',
-        'assets/images/placeholderBanner.jpg',
-        'assets/images/placeholderBanner.jpg',
-        'assets/images/placeholderBanner.jpg',
-        'assets/images/placeholderBanner.jpg',
+        'assets/images/img2.png',
+        'assets/images/img8.png',
+        'assets/images/img4.png',
+        'assets/images/img5.png',
+        'assets/images/img6.png',
+        'assets/images/img7.png',
     ];
 
     // Create lightbox container
