@@ -429,6 +429,10 @@ form {
     gap: 1rem;
 }
 
+textarea {
+    resize: vertical;
+}
+
 input, textarea {
     padding: 0.8rem;
     background-color: rgba(255, 255, 255, 0.1);
