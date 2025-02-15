@@ -85,13 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // contact form
-    const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        // Add your form submission logic here
-        alert('Thank you for your message! We will get back to you soon.');
-        contactForm.reset();
-    });
+    // const contactForm = document.getElementById('contactForm');
+    // contactForm.addEventListener('submit', (e) => {
+    //     e.preventDefault();
+    //     alert('Thank you for your message! We will get back to you soon.');
+    //     contactForm.reset();
+    // });
 
     // parallax effect
     const hero = document.querySelector('.hero');
