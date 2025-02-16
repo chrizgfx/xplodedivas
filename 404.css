@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #48fd63;
+    --secondary-color: #0b2c12;
+    --background-color: #020c06;
+    --text-color: #ffffff;
+    --accent-gradient: linear-gradient(45deg, #48fd63, #00ff9d);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.errContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.7)
+    ), 
+    repeating-radial-gradient(
+        circle at 20% 50%,
+        rgba(72, 253, 99, 0.09) 0px,
+        transparent 100px
+    );
+}
+
+.errContent {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    border: 1px solid rgba(72, 253, 99, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease;
+}
+
+.danceAccent {
+    font-family: 'Dancing Script', cursive;
+    color: var(--primary-color);
+    font-size: 3em;
+    text-shadow: 0 0 10px rgba(72, 253, 99, 0.3);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.backButton {
+    display: inline-block;
+    background: var(--accent-gradient);
+    color: var(--background-color);
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(72, 253, 99, 0.3);
+}
+
+.backButton:hover {
+    box-shadow: 0 8px 20px rgba(72, 253, 99, 0.4);
+    filter: brightness(1.4);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .errContent {
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    .danceAccent {
+        font-size: 2.5em;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .backButton {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+}
